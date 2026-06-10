@@ -15,7 +15,9 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://eventflow-jeliem.vercel.app"
+    "https://eventflow-jeliem.vercel.app",
+    "https://eventflow-7sciev04c-jeremy-trystan-s-projects.vercel.app",
+    /\.vercel\.app$/
   ],
   credentials: true
 }));
