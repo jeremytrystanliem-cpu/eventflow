@@ -7,4 +7,11 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  build: {
+    outDir: 'dist',
+  },
+  // Vercel SPA fallback
+  server: {
+    historyApiFallback: true,
+  },
 })
